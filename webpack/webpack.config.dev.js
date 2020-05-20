@@ -8,6 +8,9 @@ module.exports = merge(baseConfig, {
     port: 5555,
     contentBase: path.join(__dirname, '/dist'),
     historyApiFallback: true,
+    proxy: {
+      '/api': 'http://localhost:8888',
+    },
   },
   devtool: 'cheap-module-source-map',
 })
