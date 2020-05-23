@@ -1,0 +1,77 @@
+.repoCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.repoCards li {
+  width: 23%;
+  margin: 15px 5px;
+  position: relative;
+  background: var(--dark);
+  border: 1px solid var(--dark);
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 5px;
+  line-break: anywhere;
+  justify-content: space-between;
+}
+
+.repoCards li:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+  background: linear-gradient(to right, var(--green), var(--red));
+}
+
+.repoCards h3 {
+  margin: 10px 0;
+}
+
+.repoCards p {
+  line-height: 1.3;
+}
+
+.repoCards img {
+  width: 45%;
+  margin: 10px 0;
+  border-radius: 50%;
+  border: 2px solid var(--light);
+}
+
+.repoCards .detailBtn {
+  margin: 10px 0;
+  background: transparent;
+  color: var(--light);
+  border: 1px solid var(--green);
+  padding: 6px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.repoCards .detailBtn:hover {
+  background: var(--green);
+}
+
+@media only screen and (max-width: 960px) {
+  .repoCards li {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .repoCards li {
+    width: 100%;
+  }
+}

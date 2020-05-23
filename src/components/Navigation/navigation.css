@@ -1,0 +1,16 @@
+.navigation {
+  background: var(--dark);
+  padding: 20px 15px;
+  font-weight: bold;
+}
+
+.navList {
+  display: flex;
+}
+
+.navList li a {
+  list-style: none;
+  color: var(--light);
+  text-decoration: none;
+  padding-left: 15px;
+}

@@ -1,0 +1,24 @@
+.languageList {
+  display: flex;
+  justify-content: center;
+}
+
+.languageBtn {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px 5px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.selectedLang {
+  color: var(--green);
+}
+
+@media only screen and (max-width: 767px) {
+  .languageBtn {
+    font-size: 14px;
+  }
+}

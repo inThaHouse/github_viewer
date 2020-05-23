@@ -1,0 +1,33 @@
+@keyframes loading {
+  from {
+    opacity: 1;
+    transform: scale(0.001);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+/* need this to prevent additional async calls while spinner is up */
+.loadingSpinner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.loadingSpinner::after {
+  content: '';
+  animation: loading 1s infinite ease-out;
+  background: radial-gradient(white, var(--red));
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 45px);
+  top: calc(50% - 45px);
+  height: 90px;
+  width: 90px;
+}

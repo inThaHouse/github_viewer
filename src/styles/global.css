@@ -1,0 +1,10 @@
+@import './default.css';
+@import './variables.css';
+
+@import '../components/Layout/layout.css';
+@import '../components/LanguageList/languageList.css';
+@import '../components/LoadingSpinner/loadingSpinner.css';
+@import '../components/Search/Search.css';
+@import '../components/Navigation/navigation.css';
+@import '../components/RepoCards/RepoCards.css';
+@import '../components/Title/Title.css';

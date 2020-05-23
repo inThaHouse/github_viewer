@@ -1,5 +1,6 @@
 [build]
-  functions = 'src/functions'
+  functions = 'functions'
+  command = 'npm run prod'
   publish = 'dist'
 
 [dev]

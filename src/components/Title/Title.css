@@ -1,0 +1,14 @@
+.title h1 {
+  text-align: center;
+  color: var(--dark);
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 0.5;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .title h1 {
+    font-size: 18px;
+  }
+}
