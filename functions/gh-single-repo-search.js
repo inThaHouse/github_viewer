@@ -21,9 +21,12 @@ exports.handler = function (event, context, callback) {
       stargazers {
         totalCount
       }
-      issues(first: 10) {
+      issues(last: 10) {
         totalCount
         nodes {
+          url
+          updatedAt
+          state
           title
           body
           author {

@@ -1,6 +1,6 @@
-export const truncate = (sentence: string): string => {
-  if (sentence && sentence.length > 50) {
-    return sentence.substring(0, 50).trim() + '...'
+export const truncate = (sentence: string, limit: number): string => {
+  if (sentence && sentence.length > limit) {
+    return sentence.substring(0, limit).trim() + '...'
   }
 
   return sentence

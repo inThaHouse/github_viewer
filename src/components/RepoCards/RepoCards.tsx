@@ -17,7 +17,7 @@ const RepoList = (props: Props): React.ReactElement => {
           <h2>{name}</h2>
           <img src={owner.avatarUrl} />
           <h3>by: {owner.login}</h3>
-          <p>{truncate(description)}</p>
+          <p>{truncate(description, 50)}</p>
           <button
             onClick={() => selectRepo(name, owner.login)}
             className='detailBtn'
