@@ -10,7 +10,7 @@ const IssueList = (props: Props): React.ReactElement => {
   const { issues } = props
 
   return (
-    <>
+    <div className='issueListCtn'>
       <h2>Latest issues</h2>
       <ul className={'issueList'}>
         {issues.map((issue: any) => (
@@ -21,7 +21,7 @@ const IssueList = (props: Props): React.ReactElement => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 

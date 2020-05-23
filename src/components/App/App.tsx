@@ -24,6 +24,15 @@ const App = (): React.ReactElement => {
             <Search />
           </Route>
           <Route exact path='/repoProfile'>
+            <h1
+              style={{
+                background: 'seagreen',
+                color: 'white',
+                textAlign: 'center',
+              }}
+            >
+              UNDER DEVELOPMENT
+            </h1>
             <RepoProfile />
           </Route>
         </Switch>

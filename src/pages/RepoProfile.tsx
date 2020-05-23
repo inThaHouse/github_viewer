@@ -20,29 +20,31 @@ const RepoProfile = (): React.ReactElement => {
     repoProfile && (
       <>
         <Title title={repoProfile.name} />
-        <div style={{ textAlign: 'center' }}>
-          <img src={repoProfile.owner.avatarUrl} />
-          <h3>{repoProfile.owner.login}</h3>
-          <p>{repoProfile.description}</p>
-          <h4>⭐ {repoProfile.stargazers.totalCount}</h4>
-          <h4>🐛 {repoProfile.issues.totalCount}</h4>
-          <h5>
-            Homepage can be found{' '}
-            <a target='blank' href={repoProfile.homepageUrl}>
-              here
-            </a>
-            .
-          </h5>
-          <h5>
-            Repo can be found{' '}
-            <a target='blank' href={repoProfile.owner.url}>
-              here
-            </a>
-            .
-          </h5>
-        </div>
+        <div className='repoProfilePage'>
+          <div className='repoProfileCard'>
+            <img src={repoProfile.owner.avatarUrl} />
+            <h3>{repoProfile.owner.login}</h3>
+            <p>{repoProfile.description}</p>
+            <h4>⭐ {repoProfile.stargazers.totalCount}</h4>
+            <h4>🐛 {repoProfile.issues.totalCount}</h4>
+            <h5>
+              Homepage can be found{' '}
+              <a target='blank' href={repoProfile.homepageUrl}>
+                here
+              </a>
+              .
+            </h5>
+            <h5>
+              Repo can be found{' '}
+              <a target='blank' href={repoProfile.owner.url}>
+                here
+              </a>
+              .
+            </h5>
+          </div>
 
-        <IssueList issues={repoProfile.issues.nodes} />
+          <IssueList issues={repoProfile.issues.nodes} />
+        </div>
       </>
     )
   )

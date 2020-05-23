@@ -1,0 +1,27 @@
+.repoProfilePage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.repoProfileCard {
+  width: 40%;
+  padding: 6px 20px;
+}
+
+.repoProfileCard img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .repoProfilePage {
+    flex-direction: column;
+  }
+
+  .repoProfileCard {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+}

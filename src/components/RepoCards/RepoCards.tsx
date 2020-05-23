@@ -11,9 +11,9 @@ const RepoList = (props: Props): React.ReactElement => {
   const { repos, selectRepo } = props
 
   return (
-    <ul className='repoCards'>
+    <ul className='repoList'>
       {repos.map(({ homepageUrl, description, name, owner }) => (
-        <li key={homepageUrl + description}>
+        <li className='repoCard' key={homepageUrl + description}>
           <h2>{name}</h2>
           <img src={owner.avatarUrl} />
           <h3>by: {owner.login}</h3>

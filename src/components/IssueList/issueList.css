@@ -1,5 +1,16 @@
+.issueListCtn {
+  width: 60%;
+}
+
 .issueList li {
-  border: 1px solid green;
+  border: 1px solid var(--green);
   margin-bottom: 10px;
   padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .issueListCtn {
+    margin: 25px 0;
+    width: 100%;
+  }
 }
