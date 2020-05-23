@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack/webpack.config.dev.js --open",
-    "prod": "rimraf dist && webpack --config webpack.config.prod.js",
+    "prod": "rimraf dist && webpack --config  webpack/webpack.config.prod.js",
     "lint": "eslint --ignore-path .gitignore",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(ts|tsx)\"",
     "test": "jest"
