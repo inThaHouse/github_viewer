@@ -4,7 +4,7 @@ import Title from '../components/Title/Title'
 import { RepoType } from '../models/RepoType'
 import IssueList from '../components/IssueList/IssueList'
 
-const RepoProfile = (): React.ReactElement => {
+const RepoProfile: React.FC = () => {
   const history = useHistory()
   const [repoProfile, setRepoProfile] = useState<RepoType | any>(null)
 

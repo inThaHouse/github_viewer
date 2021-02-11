@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from '../components/Title/Title'
 
-const Search = (): React.ReactElement => (
+const Search: React.FC = () => (
   <>
     <Title title={'UNDER DEVELOPMENT!'} />
   </>
